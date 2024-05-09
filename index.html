@@ -20,7 +20,7 @@
             color: black;
             font-family: 'Waltograph', cursive;
             font-weight: bold;
-            font-size: 1.5em;
+            font-size: 1.2em;
             border-bottom: 2px solid black;
             margin-bottom: 10px;
         }
@@ -102,33 +102,14 @@
             <a href="#" onclick="alert('Soneri Mustaqeem Islamic Banking was established as a dedicated Islamic Banking Division within Soneri Bank Limited in 2004 to offer its customers products that are Shari’ah compliant. The bank provides a wide range of Shari’ah compliant solutions to its diverse clienteles and is committed to introduce innovative products and initiatives for its valued customers. Soneri Mustaqeem Islamic Banking comprises a team of qualified professionals who design and structure Islamic financial solutions and ensure that they are in line with Shari’ah principles. These solutions are developed under the guidance of a dedicated Shari’ah Board who are renowned Shari’ah scholars of Pakistan. This expertise allows us to deliver competitive Islamic Banking services to our valued customers.'); return false;">Overview</a>
         </div>
         <div class="clear"></div>
-        <h1>SONERI BANK </h1>
+        <h1 style="color: black; text-shadow: 0 0 20px black;">SONERI BANK </h1>
     </header>
 
-    <h1>Check Account Balance</h1>
+    <h1 style="color: black;">Check Account Balance</h1>
     <label for="accountNumber">Enter Account Number:</label>
     <input type="text" id="accountNumber">
     <button onclick="checkAccount()">Check</button>
     <div id="result"></div>
-
-    <script>
-        function checkAccount() {
-            var accountNumber = document.getElementById("accountNumber").value;
-
-            if (accountNumber === "20006245138") {
-                var resultDiv = document.getElementById("result");
-                resultDiv.innerHTML = "<p class='success'>Account Balance: 5,00,00,000<br>Name: Sana Ullah Sindhu<br>Pending Tax: 10,50,000</p>";
-            } else {
-                var resultDiv = document.getElementById("result");
-                resultDiv.innerHTML = "<p class='error'>Account Holder does not exist. Kindly try entering a correct Account No.</p>";
-            }
-        }
-    </script>
-
-    <footer>
-        <p>Copyright © Soneri Bank</p>
-    </footer>
-    <div class="background-image"></div>
     <div class="about-us-text">
         <p><strong>Online Banking Services are available for all chequing account holders of Soneri Bank.</strong></p>
         <h2><strong>Services</strong></h2>
@@ -148,7 +129,11 @@
         <p><strong>Govt. Taxes as per rules are recoverable on outstation collection cheques</strong></p>
     </div>
     <img src="./img 1.jpg" alt="">
+    <footer>
+        <p>Copyright © Soneri Bank</p>
+    </footer>
 </body>
 
 </html>
+
 
