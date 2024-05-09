@@ -14,16 +14,20 @@
         }
 
         header {
-            background-color: #d8aaff;
+            background-color: yellow;
             padding: 3px;
             text-align: center;
-            color: brown;
+            color: black;
             font-family: 'Waltograph', cursive;
+            font-weight: bold;
+            font-size: 1.5em;
+            border-bottom: 2px solid black;
+            margin-bottom: 10px;
         }
 
         header a {
             margin-right: 10px;
-            color: brown;
+            color: black;
             text-decoration: none;
             font-weight: bold;
             font-size: 24px;
@@ -47,7 +51,7 @@
         }
 
         footer {
-            background-color: light yellow;
+            background-color: darkyellow;
             padding: 5px;
             text-align: center;
             font-size: 16px;
@@ -58,64 +62,33 @@
             width: 100%;
         }
 
-        @keyframes neon {
-            0% {
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00e0, 0 0 70px #ff00e0, 0 0 80px #ff00e0, 0 0 100px #ff00e0, 0 0 150px #ff00e0;
-            }
-
-            50% {
-                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00e0, 0 0 35px #ff00e0, 0 0 40px #ff00e0, 0 0 50px #ff00e0, 0 0 75px #ff00e0;
-            }
-
-            100% {
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00e0, 0 0 70px #ff00e0, 0 0 80px #ff00e0, 0 0 100px #ff00e0, 0 0 150px #ff00e0;
-            }
+        .about-us-text {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            max-width: 90%;
+            margin: 20px auto;
+            overflow-y: scroll;
+            max-height: 70vh;
+            margin-top: 95%;
+            font-weight: bold;
         }
 
-        h1 {
-            font-size: 3em;
-            animation: neon 1s infinite alternate;
-            color: yellow;
-        }
-
-        .background-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: calc(100vh - 60px); /* Adjust the value (60px) based on your header height */
-            background: url('img 0.jpg') center/contain no-repeat;
-            z-index: -1;
-        }
-
-      .about-us-text {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    max-width: 90%;
-    margin: 20px auto; /* Adjust the margin-top value to move it down */
-    overflow-y: scroll;
-    max-height: 70vh;
-    margin-top: 95%;
-}
-
-
-     
-
-
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 10px skyblue, 0 0 20px skyblue, 0 0 30px skyblue, 0 0 40px skyblue, 0 0 70px skyblue, 0 0 80px skyblue, 0 0 100px skyblue, 0 0 150px skyblue;
+        @media (max-width: 768px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
-            to {
-                text-shadow: 0 0 20px brown, 0 0 30px brown, 0 0 40px brown, 0 0 70px brown, 0 0 80px brown, 0 0 100px brown, 0 0 150px brown, 0 0 300px brown;
+            img {
+                max-width: 100%;
+                height: auto;
             }
         }
-
 
     </style>
 </head>
@@ -125,19 +98,13 @@
         <div class="left"></div>
         <div class="right">
             <a href="#" onclick="alert('Welcome to Soneri Bank !!!'); return false;">Home</a>
-            <a href="#" onclick="alert('The Soneri Bank Limited is a Pakistani bank based in Karachi, Sindh, Pakistan. Its head office is located in the PNSC Building. It is a mid-sized bank having about over 400+ branches country-wide. Soneri Bank started its operation in the year 1992.'); return false;">About</a>
-            <a href="#" onclick="alert('Soneri Mustaqeem Islamic Banking was established as a dedicated Islamic Banking Division within Soneri Bank Limited in 2004 to offer its customers products that are Shari’ah compliant. The bank provides a wide range of Shari’ah compliant solutions to its diverse clienteles and is committed to introduce innovative products and initiatives for its valued customers.
-
-Soneri Mustaqeem Islamic Banking comprises a team of qualified professionals who design and structure Islamic financial solutions and ensure that they are in line with Shari’ah principles. These solutions are developed under the guidance of a dedicated Shari’ah Board who are renowned Shari’ah scholars of Pakistan. This expertise allows us to deliver competitive Islamic Banking services to our valued customers.'); return false;">Overview</a>
+            <a href="#" onclick="alert('The Soneri Bank Limited is a Pakistani bank based in Karachi, Sindh, Pakistan. Its head office is located in the PNSC Building. It is a mid-sized bank having about over 400+ branches country-wide. Soneri Bank started its operation in the year 1992.'); return false;">About</a>
+            <a href="#" onclick="alert('Soneri Mustaqeem Islamic Banking was established as a dedicated Islamic Banking Division within Soneri Bank Limited in 2004 to offer its customers products that are Shari’ah compliant. The bank provides a wide range of Shari’ah compliant solutions to its diverse clienteles and is committed to introduce innovative products and initiatives for its valued customers. Soneri Mustaqeem Islamic Banking comprises a team of qualified professionals who design and structure Islamic financial solutions and ensure that they are in line with Shari’ah principles. These solutions are developed under the guidance of a dedicated Shari’ah Board who are renowned Shari’ah scholars of Pakistan. This expertise allows us to deliver competitive Islamic Banking services to our valued customers.'); return false;">Overview</a>
         </div>
         <div class="clear"></div>
         <h1>SONERI BANK </h1>
     </header>
 
-    <body>
-    <!-- Your existing code -->
-
-    <!-- Insert the new code here -->
     <h1>Check Account Balance</h1>
     <label for="accountNumber">Enter Account Number:</label>
     <input type="text" id="accountNumber">
@@ -157,89 +124,31 @@ Soneri Mustaqeem Islamic Banking comprises a team of qualified professionals who
             }
         }
     </script>
-</body>
+
     <footer>
         <p>Copyright © Soneri Bank</p>
     </footer>
     <div class="background-image"></div>
     <div class="about-us-text">
-        <p>Online Banking Services are available for all chequing account holders of Soneri Bank.</p>
-<h2>Services</h2>
-<ul>
-    <li>Cash Payments of cheques drawn on any of our all branches</li>
-    <li>Cash Deposits into customers’ accounts maintained at any of our all branches</li>
-</ul>
-<h2>Government Taxes/Duties</h2>
-<ul>
-    <li>Cash Cheques or Cheques Applicable Government Taxes/duties</li>
-    <li>Under Collection if payable recoverable as per rules to third parties</li>
-</ul>
-<h2>Cash Deposit</h2>
-<p>Deposits made by third parties into accounts of customers maintained at all branches are subject to recovery of applicable withholding tax, as per rules from the depositors</p>
-<h2>Cheques under Collection</h2>
-<p>Proceed of Cheques drawn on our all branches are immediately credited to depositors account subject to fulfillment of other conditions governing payment of cheques</p>
-<p>Govt. Taxes as per rules are recoverable on outstation collection cheques</p>
-
-            </div>
-        <img src="./img 1.jpg" alt="">
-                                    </div>
-                          
-                            <style>
-                                /* Center images on mobile screens */
-                                @media (max-width: 768px) {
-                                    body {
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: center;
-                                    }
-                            
-                                    img {
-                                        max-width: 100%;
-                                        height: auto;
-                                    }
-                                }
-
-                              
-
-                            </style>
-    <script>
-        // Function to show the shop now interface
-        function showShopNowInterface() {
-            document.getElementById('shop-now-interface').style.display = 'block';
-        }
-
-        // Function to handle file input change and update image
-        function handleFileInputChange(event, imageId) {
-            var file = event.target.files[0];
-            if (file) {
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    document.getElementById(imageId).src = e.target.result;
-                    // Save the image URL to localStorage to persist changes
-                    localStorage.setItem(imageId, e.target.result);
-                };
-                reader.readAsDataURL(file);
-            }
-        }
-
-        // Add event listeners to file inputs
-        document.querySelectorAll('.update-button').forEach(function (button, index) {
-            var fileInputId = 'file-input-' + (index + 1);
-            button.addEventListener('click', function () {
-                document.getElementById(fileInputId).click();
-            });
-            document.getElementById(fileInputId).addEventListener('change', function (event) {
-                handleFileInputChange(event, 'image-' + (index + 1));
-            });
-            // Check if there's a saved image for this index and display it
-            var savedImage = localStorage.getItem('image-' + (index + 1));
-            if (savedImage) {
-                document.getElementById('image-' + (index + 1)).src = savedImage;
-            }
-        });
-
-    
-    </script>
+        <p><strong>Online Banking Services are available for all chequing account holders of Soneri Bank.</strong></p>
+        <h2><strong>Services</strong></h2>
+        <ul>
+            <li><strong>Cash Payments of cheques drawn on any of our all branches</strong></li>
+            <li><strong>Cash Deposits into customers’ accounts maintained at any of our all branches</strong></li>
+        </ul>
+        <h2><strong>Government Taxes/Duties</strong></h2>
+        <ul>
+            <li><strong>Cash Cheques or Cheques Applicable Government Taxes/duties</strong></li>
+            <li><strong>Under Collection if payable recoverable as per rules to third parties</strong></li>
+        </ul>
+        <h2><strong>Cash Deposit</strong></h2>
+        <p><strong>Deposits made by third parties into accounts of customers maintained at all branches are subject to recovery of applicable withholding tax, as per rules from the depositors</strong></p>
+        <h2><strong>Cheques under Collection</strong></h2>
+        <p><strong>Proceed of Cheques drawn on our all branches are immediately credited to depositors account subject to fulfillment of other conditions governing payment of cheques</strong></p>
+        <p><strong>Govt. Taxes as per rules are recoverable on outstation collection cheques</strong></p>
+    </div>
+    <img src="./img 1.jpg" alt="">
 </body>
 
 </html>
+
