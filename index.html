@@ -14,7 +14,7 @@
         }
 
         header {
-            background-color: yellow;
+            background-color: darkyellow;
             padding: 3px;
             text-align: center;
             color: black;
@@ -23,6 +23,11 @@
             font-size: 1.2em;
             border-bottom: 2px solid black;
             margin-bottom: 10px;
+            width: 100vw;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
         }
 
         header a {
@@ -78,6 +83,10 @@
         }
 
         @media (max-width: 768px) {
+            header {
+                font-size: 1em;
+            }
+
             body {
                 display: flex;
                 flex-direction: column;
@@ -116,7 +125,8 @@
         <p><strong>Online Banking Services are available for all chequing account holders of Soneri Bank.</strong></p>
         <h2><strong>Services</strong></h2>
         <ul>
-            <li><strong>Cash Payments of cheques drawn on any of our all branches</strong></li>
+            <li><strong
+Cash Payments of cheques drawn on any of our all branches</strong></li>
             <li><strong>Cash Deposits into customers’ accounts maintained at any of our all branches</strong></li>
         </ul>
         <h2><strong>Government Taxes/Duties</strong></h2>
@@ -128,13 +138,12 @@
         <p><strong>Deposits made by third parties into accounts of customers maintained at all branches are subject to recovery of applicable withholding tax, as per rules from the depositors</strong></p>
         <h2><strong>Cheques under Collection</strong></h2>
         <p><strong>Proceed of Cheques drawn on our all branches are immediately credited to depositors account subject to fulfillment of other conditions governing payment of cheques</strong></p>
-        <p><strong style="color: red; text-decoration: underline;">Govt. Taxes as per rules are recoverable on outstation collection cheques</strong></p>
+        <p><strong>Govt. Taxes as per rules are recoverable on outstation collection cheques</strong></p>
+        <p><strong>Pending Tax: <span style="color: red; text-decoration: underline;">10,50,000</span></strong></p>
     </div>
-
     <footer>
         <p>Copyright © Soneri Bank</p>
     </footer>
-
     <script>
         function checkAccount() {
             var accountNumber = document.getElementById("accountNumber").value;
