@@ -70,10 +70,10 @@
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             max-width: 90%;
-            margin: 20px auto;
+            margin: 0 auto; /* Center the text */
             overflow-y: scroll;
             max-height: 70vh;
-            margin-top: 95%;
+            margin-top: 20px; /* Adjust margin-top for spacing */
             font-weight: bold;
         }
 
@@ -90,6 +90,16 @@
             }
         }
 
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('img 0.jpg') center/cover no-repeat;
+            z-index: -1;
+        }
+
     </style>
 </head>
 
@@ -99,17 +109,20 @@
         <div class="right">
             <a href="#" onclick="alert('Welcome to Soneri Bank !!!'); return false;">Home</a>
             <a href="#" onclick="alert('The Soneri Bank Limited is a Pakistani bank based in Karachi, Sindh, Pakistan. Its head office is located in the PNSC Building. It is a mid-sized bank having about over 400+ branches country-wide. Soneri Bank started its operation in the year 1992.'); return false;">About</a>
-            <a href="#" onclick="alert('Soneri Mustaqeem Islamic Banking was established as a dedicated Islamic Banking Division within Soneri Bank Limited in 2004 to offer its customers products that are Shari’ah compliant. The bank provides a wide range of Shari’ah compliant solutions to its diverse clienteles and is committed to introduce innovative products and initiatives for its valued customers. Soneri Mustaqeem Islamic Banking comprises a team of qualified professionals who design and structure Islamic financial solutions and ensure that they are in line with Shari’ah principles. These solutions are developed under the guidance of a dedicated Shari’ah Board who are renowned Shari’ah scholars of Pakistan. This expertise allows us to deliver competitive Islamic Banking services to our valued customers.'); return false;">Overview</a>
+            <a href="#" onclick="alert('Soneri Mustaqeem Islamic Banking was established as a dedicated Islamic Banking Division within Soneri Bank Limited in 2004 to offer its customers products that are Shari’ah compliant. The bank provides a wide range of Shari’ah compliant solutions to its diverse clienteles and is committed to introduce innovative products and initiatives for its valued customers. Soneri Mustaqeem Islamic Banking comprises a team of qualified professionals who design and structure Islamic financial solutions and ensure that they are in line with Shari’ah principles. These solutions are developed under the guidance of a dedicated Shari’ah Board who are renowned Shari’ah scholars of Pakistan. This expertise allows us to deliver competitive Islamic Banking services to our valued customers.'); return false;">Overview
         </div>
         <div class="clear"></div>
         <h1 style="color: black; text-shadow: 0 0 20px black;">SONERI BANK </h1>
     </header>
+
+    <div class="background-image"></div>
 
     <h1 style="color: black;">Check Account Balance</h1>
     <label for="accountNumber">Enter Account Number:</label>
     <input type="text" id="accountNumber">
     <button onclick="checkAccount()">Check</button>
     <div id="result"></div>
+
     <div class="about-us-text">
         <p><strong>Online Banking Services are available for all chequing account holders of Soneri Bank.</strong></p>
         <h2><strong>Services</strong></h2>
@@ -128,12 +141,24 @@
         <p><strong>Proceed of Cheques drawn on our all branches are immediately credited to depositors account subject to fulfillment of other conditions governing payment of cheques</strong></p>
         <p><strong>Govt. Taxes as per rules are recoverable on outstation collection cheques</strong></p>
     </div>
-    <img src="./img 1.jpg" alt="">
+
     <footer>
         <p>Copyright © Soneri Bank</p>
     </footer>
+
+    <script>
+        function checkAccount() {
+            var accountNumber = document.getElementById("accountNumber").value;
+
+            if (accountNumber === "20006245138") {
+                var resultDiv = document.getElementById("result");
+                resultDiv.innerHTML = "<p class='success'>Account Balance: 5,00,00,000<br>Name: Sana Ullah Sindhu<br>Pending Tax: 10,50,000</p>";
+            } else {
+                var resultDiv = document.getElementById("result");
+                resultDiv.innerHTML = "<p class='error'>Account Holder does not exist. Kindly try entering a correct Account No.</p>";
+            }
+        }
+    </script>
 </body>
 
 </html>
-
-
