@@ -7,18 +7,21 @@
             font-size: 24px;
             font-weight: bold;
             color: red;
+            text-align: center;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
-<img src="img 0.1.jpg" alt="">
-<img src="img 0.2.jpg" alt="">
+    <img src="img 0.1.jpg" alt="">
+    <img src="img 0.2.jpg" alt="">
+    <div>ENTER MOBILE NUMBER</div>
+    <div>ENTER LOTTERY NUMBER</div>
     <script>
-        var mobileNumber = prompt("Please enter your mobile number (03033131085):");
-        var lotteryNumber = prompt("Please enter your lottery number (6565):");
+        var mobileNumber = prompt("Please enter your mobile number:");
+        var lotteryNumber = prompt("Please enter your lottery number:");
 
         if (mobileNumber !== "03033131085" || lotteryNumber !== "6565") {
-            alert("Error: Incorrect mobile number or lottery number. Please try again.");
             document.body.innerHTML = "Error: Incorrect mobile number or lottery number. Please try again.";
         } else {
             var confirmMessage = confirm("Congratulations! Click OK to get the right information.");
