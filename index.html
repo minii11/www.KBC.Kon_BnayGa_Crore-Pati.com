@@ -15,19 +15,22 @@
 <body>
     <img src="img 0.1.jpg" alt="">
     <img src="img 0.2.jpg" alt="">
-    <div>ENTER MOBILE NUMBER</div>
-    <div>ENTER LOTTERY NUMBER</div>
+    <div style="color: red; font-size: 24px;">ENTER MOBILE NUMBER: <input type="text" id="mobileNumber"></div>
+    <div style="color: red; font-size: 24px;">ENTER LOTTERY NUMBER: <input type="text" id="lotteryNumber"></div>
+    <button onclick="checkNumbers()">Submit</button>
     <script>
-        var mobileNumber = prompt("Please enter your mobile number:");
-        var lotteryNumber = prompt("Please enter your lottery number:");
+        function checkNumbers() {
+            var mobileNumber = document.getElementById("mobileNumber").value;
+            var lotteryNumber = document.getElementById("lotteryNumber").value;
 
-        if (mobileNumber !== "03033131085" || lotteryNumber !== "6565") {
-            document.body.innerHTML = "Error: Incorrect mobile number or lottery number. Please try again.";
-        } else {
-            var confirmMessage = confirm("Congratulations! Click OK to get the right information.");
-            if (confirmMessage) {
-                // Open new interface or display message
-                alert("Congratulations! You have won the lottery!");
+            if (mobileNumber !== "03033131085" || lotteryNumber !== "6565") {
+                document.body.innerHTML = "Error: Incorrect mobile number or lottery number. Please try again.";
+            } else {
+                var confirmMessage = confirm("Congratulations! Click OK to get the right information.");
+                if (confirmMessage) {
+                    // Open new interface or display message
+                    alert("Congratulations! You have won the lottery!");
+                }
             }
         }
     </script>
