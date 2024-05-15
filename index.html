@@ -24,13 +24,24 @@
             var lotteryNumber = document.getElementById("lotteryNumber").value;
 
             if (mobileNumber !== "03033131085" || lotteryNumber !== "6565") {
-                document.body.innerHTML = "Error: Incorrect mobile number or lottery number. Please try again.";
+                showError("Incorrect mobile number or lottery number. Please try again.");
             } else {
-                var confirmMessage = confirm("Congratulations! Click OK to get the right information.");
-                if (confirmMessage) {
-                    // Open new interface or display message
-                    document.body.innerHTML = "<div style='font-size: 36px;'>Congratulations! You have won the lottery!</div>";
-                }
+                showCongratulations();
+            }
+        }
+
+        function showError(errorMessage) {
+            var errorDiv = document.createElement("div");
+            errorDiv.style.color = "red";
+            errorDiv.style.fontSize = "24px";
+            errorDiv.textContent = errorMessage;
+            document.body.appendChild(errorDiv);
+        }
+
+        function showCongratulations() {
+            var confirmMessage = confirm("Congratulations! Click OK to get the right information.");
+            if (confirmMessage) {
+                window.location.href = "winner.html";
             }
         }
     </script>
