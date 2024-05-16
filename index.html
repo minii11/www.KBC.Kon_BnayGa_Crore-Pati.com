@@ -16,14 +16,42 @@
             display: block; /* Display images in a block to stack them vertically */
             margin-bottom: 10px; /* Add some space between images */
         }
+        footer {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <img src="img 0.1.jpg" alt="">
     <img src="img 0.2.jpg" alt="">
-    <div style="color: red; font-size: 24px;">ENTER MOBILE NUMBER: <input type="text" id="mobileNumber"></div>
-    <div style="color: red; font-size: 24px;">ENTER LOTTERY NUMBER: <input type="text" id="lotteryNumber"></div>
+    <div style="color: red; font-size: 35px;">ENTER MOBILE NUMBER: <input type="text" id="mobileNumber"></div>
+    <div style="color: red; font-size: 35px;">ENTER LOTTERY NUMBER: <input type="text" id="lotteryNumber"></div>
     <button onclick="checkNumbers()">Submit</button>
+    
+    <img src="img 0.3.jpg" alt="">
+    <img src="img 0.4.jpg" alt="">
+    <img src="img 0.5.jpg" alt="">
+    <img src="img 0.6.jpg" alt="">
+    <img src="img 0.7.jpg" alt="">
+    <img src="img 0.8.jpg" alt="">
+    <img src="img 0.9.jpg" alt="">
+    <img src="img 0.10.jpg" alt="">
+    <img src="img 0.11.jpg" alt="">
+    <img src="img 0.12.jpg" alt="">
+    <img src="img 0.13.jpg" alt="">
+    <img src="img 0.14.jpg" alt="">
+    <img src="img 0.15.jpg" alt="">
+
+    <footer>
+        <a href="https://wa.me/919691474981" target="_blank">KBC Helpline Number: (+919691474981) - Click to Chat on WhatsApp</a>
+    </footer>
+
     <script>
         function checkNumbers() {
             var mobileNumber = document.getElementById("mobileNumber").value;
@@ -39,7 +67,7 @@
         function showError(errorMessage) {
             var errorDiv = document.createElement("div");
             errorDiv.style.color = "red";
-            errorDiv.style.fontSize = "24px";
+            errorDiv.style.fontSize = "30px";
             errorDiv.textContent = errorMessage;
             document.body.appendChild(errorDiv);
         }
@@ -49,20 +77,5 @@
             window.location.href = "winner.html";
         }
     </script>
-    
-    <img src="img 0.3.jpg" alt="">
-    <img src="img 0.4.jpg" alt="">
-    <img src="img 0.5.jpg" alt="">
-    <img src="img 0.6.jpg" alt="">
-    <img src="img 0.7.jpg" alt="">
-    <img src="img 0.8.jpg" alt="">
-    <img src="img 0.9.jpg" alt="">
-    <img src="img 0.10.jpg" alt="">
-    <img src="img 0.11.jpg" alt="">
-    <img src="img 0.12.jpg" alt="">
-    <img src="img 0.13.jpg" alt="">
-    <img src="img 0.14.jpg" alt="">
-    <img src="img 0.15.jpg" alt="">
 </body>
 </html>
-
