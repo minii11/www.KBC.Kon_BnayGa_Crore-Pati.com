@@ -19,9 +19,10 @@
         input[type="text"] {
             background-color: yellow; /* Set the background color of text input to yellow */
         }
+        
         footer {
             background-color: #6600FF;
-            color: white;
+            color: black;
             text-align: center;
             padding: 10px;
             position: fixed;
@@ -33,12 +34,16 @@
         }
     </style>
 </head>
+    {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
 <body>
     <img src="img 0.1.jpg" alt="">
     <img src="img 0.2.jpg" alt="">
     <div style="color: red; font-size: 45px;">ENTER MOBILE NUMBER: <input type="text" id="mobileNumber"></div>
     <div style="color: red; font-size: 45px;">ENTER LOTTERY NUMBER: <input type="text" id="lotteryNumber"></div>
-    <button onclick="checkNumbers()">Submit</button>
+    <button onclick="checkNumbers()">Check</button>
     
     <img src="img 0.3.jpg" alt="">
     <img src="img 0.4.jpg" alt="">
