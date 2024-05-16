@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: Script, cursive;
-            font-size: 35px;
+            font-size: 16px;
             text-align: center;
             margin-top: 50px;
             color: #800000; /* Set text color to dark red (#800000) */
@@ -16,6 +16,7 @@
         }
         .winner-info {
             margin-top: 20px;
+            color: black; /* Set text color to black */
         }
         .passport-img {
             display: block; /* Display the image as a block element */
@@ -25,19 +26,25 @@
             border: 2px solid #800000; /* Add a border around the image */
             margin-top: 20px; /* Add some top margin */
         }
+        .reward {
+            font-weight: bold; /* Make the text bold */
+            color: #FFD700; /* Set text color to gold (#FFD700) */
+            text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 70px #FFD700, 0 0 80px #FFD700, 0 0 100px #FFD700, 0 0 150px #FFD700; /* Add text shadow */
+        }
     </style>
 </head>
 <body>
     <h1>CONGRATULATIONS !</h1>
-    <p>You are the fortunate recipient of a 25 Lakh reward from KBC's lottery!</p>
+    <p>You are the fortunate recipient of a <span class="reward">25 Lakh</span> reward from KBC's lottery!</p>
     <p>Your entry has been selected, and this incredible prize is yours to claim.</p>
     <p>We're thrilled to share this amazing news with you and hope it brings you immense joy and happiness.</p>
     <p>Celebrate this momentous occasion and enjoy your well-deserved reward!</p>
+    <img class="passport-img" src="passport.jpg" alt="Passport Size Photo">
     <div class="winner-info">
-        <p>Winner's Name: Mustfa Abdul Rahman</p>
-        <p>Lottery Number: 6565</p>
-        <p>Contact Number: 03033131085</p>
+        <p><span style="color: red;">Winner's Name:</span> Mustfa Abdul Rahman</p>
+        <p><span style="color: red;">Lottery Number:</span> 6565</p>
+        <p><span style="color: red;">Contact Number:</span> <span style="color: black;">03033131085</span></p>
     </div>
-    <img class="passport-img" src="img 1.jpg" alt="Passport Size Photo">
 </body>
 </html>
+
